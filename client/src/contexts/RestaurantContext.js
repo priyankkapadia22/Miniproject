@@ -15,7 +15,7 @@ const RestaurantProvider = ({ children }) => {
 		const fetchRestaurants = async () => {
 			try {
 				const response = await axios.get(
-					"http://localhost:5000/restaurants"
+					"https://miniproject-gl2h.onrender.com/restaurants"
 				);
 				setRestaurants(response.data);
 			} catch (error) {
